@@ -1,0 +1,61 @@
+{
+	"schema":{
+		"system":"wordpress",
+		"system_ver":"2.4.3"		
+	},
+	
+	"tutorials":[
+		{
+			"name":"Create post",
+			"slug":"create-post",
+			"description":"How published post to blog",
+			"steps":
+			[
+				{
+					"action":"click",
+					"name":"step 1",
+					"xpath":"//*[@id='wpbody-content']/div[4]/h1",
+					"description":"Example description 1"
+				},
+				{
+					"action":"click",
+					"name":"step 2",
+					"xpath":"//*[@id='dashboard_quick_press']/h2",
+					"description":"<b>Example description 2</b><br>And something else"
+				},
+				{
+					"action":"click",
+					"name":"step 3",
+					"xpath":"//*[@id='wpbody-content']/div[4]/h1",
+					"description":"Example description 3"	
+				}
+			]
+		},
+		{
+			"name":"Build cattegory tree",
+			"slug":"build-cattegory-tree",
+			"description":"Prepare categories",
+			"steps":
+			[
+				{
+					"action":"click",
+					"name":"step 1",
+					"xpath":"//*[@id='wpbody-content']/div[4]/h1",
+					"description":"Example description 1"
+				},
+				{
+					"action":"click",
+					"name":"step 2",
+					"xpath":"//*[@id='dashboard_quick_press']/h2",
+					"description":"Example description 2"
+				},
+				{
+					"action":"click",
+					"name":"step 3",
+					"xpath":"//*[@id='wpbody-content']/div[4]/h1",
+					"description":"Example description 3"	
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,54 @@
+<style>
+#io-target-top,
+#io-target-bottom,
+#io-target-left,
+#io-target-right{
+	z-index: 100000;
+	position:fixed;
+	transition: top 0.5s, height 0.5s, left 0.5s, width 0.5s;
+	background-color: rgba(0,0,0,0.3);
+}
+#io-target-top{
+	left:0;
+	top:-1px;
+	width:100vw;
+	height:0;
+	border-bottom:1px solid yellow;
+}
+#io-target-bottom{
+	left:0;
+	top:100vh;
+	width:100vw;
+	height:0;
+	border-top:1px solid yellow;
+}
+#io-target-left{
+	left:-1px;
+	top:0;
+	width:0;
+	height:100vh;
+	border-right:1px solid yellow;
+}
+#io-target-right{
+	left:100vw;
+	top:0;
+	width:0;
+	height:100vh;
+	border-left:1px solid yellow;
+}
+#io-target-description{
+	transition: top 0.5s, height 0.5s, left 0.5s, width 0.5s, opacity 1s;
+	z-index: 100001;
+	position:fixed;
+	background-color: rgba(0,0,0,0.9);
+	padding:10px;
+	color:#fff;
+	opacity:0;
+}
+</style>
+
+<div id="io-target-top"></div>
+<div id="io-target-bottom"></div>
+<div id="io-target-left"></div>
+<div id="io-target-right"></div>
+<div id="io-target-description">Example description</div>

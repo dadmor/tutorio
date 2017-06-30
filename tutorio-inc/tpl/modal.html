@@ -1,0 +1,52 @@
+<style>
+	#tutorials-modal{
+		position:fixed;
+		background-color: rgba(0,0,0,0.75);
+		top:0;
+		width:100%;
+		height:100%;
+		z-index: 100000;
+		display:none;
+		align-items:center;
+		justify-content:center;
+		opacity:0;
+		-webkit-transition: opacity .15s ease-in-out;
+		transition: opacity .15s ease-in-out, transform .5s ease-in-out;
+		transform:scale(1.2, 1.2);
+		transform-origin: 30% 30%;
+	}
+	#tut-modal-body{
+		min-width:20%;		
+		background-color: #fff;
+		margin-top:-5em;
+	}
+	#tut-modal-body header{
+		font-size: 12px;
+		color: #333;
+		text-transform: uppercase;		
+		line-height: 30px;
+		background-color: #f6f6f6;
+		padding: 0 10px;
+		border-top: 1px solid #333;
+	}
+	.tut-modal-content{
+		padding:10px;
+	}
+
+	#tut-modal-body label, #tut-modal-body input{
+		display:block;
+		width:100%;
+	}
+	#tut-modal-body input{
+		margin-bottom: 10px;
+	}
+	#tut-modal-body button{
+		width:100%;
+		line-height:2em;
+	}
+</style>
+<div id="tutorials-modal">
+	<div id="tut-modal-body">
+		
+	</div>
+</div>

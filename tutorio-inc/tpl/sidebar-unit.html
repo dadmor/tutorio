@@ -1,0 +1,46 @@
+<style>
+#tutorials-unit h5{
+	font-size:12px;
+	margin:0;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+#tutorials-unit p{
+	margin:0;
+}
+#tutorials-unit{
+	margin:0;
+}
+#tutorials-unit li{
+	border-bottom:1px solid #ccc;
+	margin:0 -10px;
+	padding:10px;
+}
+#tutorials-unit li:first-child{
+	border-top:1px solid #ccc;
+}
+#tutorials-unit li:hover{
+	background-color: #f6f6f6;
+	cursor:pointer;
+}
+#tutorials-unit li.active{
+	background-color: #dde0ef;
+}
+.tutorial-edit{
+	float:right;
+	text-decoration: underline;
+	margin-top:-17px;
+	color:#7986cb;
+	font-size:11px;
+}
+
+</style>
+<ul id="tutorials-unit">
+	{{~it.tutorials :value:index}}
+		<li class="tutorial-unit" data-tutorial="{{=value.slug}}" data-index="{{=index}}">
+			<h5>{{=value.name}}</h5>
+			<p>{{=value.description}}</p>
+			<div class="tutorial-edit">edit</div>
+		</li>
+	{{~}}
+</ul>

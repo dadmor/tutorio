@@ -1,0 +1,87 @@
+<style>
+#bottom-bar{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica Neue,Helvetica,Arial,sans-serif;
+	position:fixed;
+	width:100%;
+	border-bottom: 10px solid #3f51b5;
+	bottom:0;
+	background-color: #7986cb;
+	box-shadow: 0 0 5px #666;
+	z-index:100006;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+#bottom-bar > div{
+	color:#fff;
+	line-height: 40px;
+	padding: 0 20px;
+}
+#bottom-bar-title{
+	float:left;
+	font-weight: bold;
+}
+#bottom-bar-manager{
+	float:right;	
+	background-color: #f06292;
+	border-bottom: 10px solid #e91e63;
+	margin-bottom:-10px;
+	width:250px;
+	text-align:center;
+}
+#bottom-bar-manager:hover{
+	cursor:pointer;
+	border-bottom: 12px solid #e91e63;
+	margin-top:-2px;
+}
+#bottom-bar-stop{
+	float:right;	
+	background-color: #ff9800;
+	border-bottom: 10px solid #e65100;
+	margin-bottom:-10px;
+	width:250px;
+	text-align:center;
+	display:none;
+}
+#bottom-bar-stop:hover{
+	cursor:pointer;
+	border-bottom: 12px solid #ef6c00;
+	background-color: #fb8c00;
+	margin-top:-2px;
+}
+#bottom-bar-info{
+	overflow: hidden;
+	height: 40px;
+	display:flex;
+	align-items:center;
+}
+#bottom-bar-info span{
+	display:block;
+	padding: 2px 6px;
+	height:20px;
+	background-color: rgba(0,0,0,0.5);
+	margin:2px;
+	border-radius: 2px;
+	line-height: 20px;
+	cursor:pointer;
+}
+#bottom-bar-info span.active{
+	background-color: rgba(0,0,0,0.8);
+}
+#bottom-bar-info span:hover{
+	color:#000;
+	background-color: rgba(255,255,255,0.8);
+}
+</style>
+<div id="bottom-bar">
+	<div id="bottom-bar-title">{{=it.title}}</div>
+	<div id="bottom-bar-manager">Tutorials manager</div>
+	<div id="bottom-bar-stop">Stop recording</div>
+	<div id="bottom-bar-info"></div>
+</div>
+
